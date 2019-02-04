@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>grid</title>
+</head>
+<style>
+    #box{
+        height: 700px;
+        width: 800px;
+        display: grid;
+        grid-template-rows: 3;
+        grid-template-columns: 3;
+        grid-template: 
+        "c1 c2 c3"
+        " c1 c4 c3"
+        "c5 c5 c5"
+
+
+    }
+    .a {
+        grid-area: c1;
+        border: 2px solid green;
+        background-color: black;
+        margin: 5px;
+        /* margin-left:20px; */
+        /* height:500px; */
+         
+    }
+    .b {
+        grid-area: c2;
+        border: 2px solid blue;
+        background-color: brown;
+        margin: 5px;
+        /* height: 250px; */
+        /* width: 500px;  */
+    }
+    .c {
+        grid-area: c3;
+        border: 2px solid green ;
+        background-color: black;
+        margin: 5px;
+        /* height: 700px; */
+  
+    }
+    .d {
+        grid-area: c4;
+        border: 2px solid blue;
+        background-color: brown;
+        margin: 5px;
+    
+        /* height: 250px; */
+        
+    }
+    .e {
+        grid-area: c5;
+        border: 2px solid red;
+        background-color: lightsalmon;
+        margin: 5px;
+ 
+        /* width: 700px; *
+        /* margin-left: 20px; */
+    }
+    
+
+</style>
+<body>
+    <div id="box">
+        <div class="a"></div>
+        <div class="b"></div>
+        <div class="c"></div>
+        <div class="d"></div>
+        <div class="e"></div>
+    </div>
+    
+</body>
+</html>
